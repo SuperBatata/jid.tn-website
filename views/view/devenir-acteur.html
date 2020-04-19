@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="../src/favicon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="../css/preloader.css">
+    <title>JID - JID - Devenez acteurJID</title>
+</head>
+
+<body>
+    <header>
+
+        <img src="../src/jidLogo.jpg" alt="JID" class="logo" />
+
+
+    </header>
+
+    <div class="container" style="padding: 20px;">
+
+        <div class="row">
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="home.php">Acceuil</a></li>
+                    <li><a href="presentation.html">Presentation</a></li>
+
+                    <li class="menu-active" class="menu-has-children"><a href="">Acteurs de la JID</a>
+                        <ul>
+                            <li><a href="cartedesactivites.php">Carte des Activités</a></li>
+                            <li><a href="calendrierdesactivite.php">Calendrier des Activités</a></li>
+                            <li><a href="devenir-acteur.html">Devenir acteur</a></li>
+                            <li><a href="proposer-un-debat.html">Proposer un débat</a></li>
+                            <li><a href="fishbowl-debate.html">Fishbowl debate</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-has-children"><a href="youthtalk2018.html">JID Youth Talk</a>
+                        <ul>
+                            <li><a href="youthtalk2018.html">JID Youth Talk 2018</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="menu-has-children"><a href="la-jid-2016.html">Documentation</a>
+                        <ul>
+                            <li><a href="la-jid-2016.html">LA JID 2016</a></li>
+                            <li><a href="la-jid-2017.html">LA JID 2017</a></li>
+                            <li><a href="la-jid-2018.html">LA JID 2018</a></li>
+                        </ul>
+                    </li>
+
+
+
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li class="menu-has-children"><a href="home.php">Français</a>
+                        <ul>
+                            <li><a href="#">Arabe</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+            </nav><!-- #nav-menu-container -->
+        </div>
+    </div>
+    </div>
+    <section id="contact-subheader">
+        <div class="container wow fadeIn">
+            <div class="row">
+
+                <div class="col-lg-12 text-center text-lg-left">
+                    <h3 class="cta-title" align="start">DEVENIR ACTEUR</h3>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="resume-section p-4 p-lg-5 text-center" id="contact">
+        <div class="my-auto">
+            <header>
+                <h1>Informations sur l'acteur de la JID - معلومات حول الجهة الفاعلة في اليوم الدولي للديمقراطية
+                    <hr>
+                </h1>
+            </header><br><br>
+
+            <form class="contact-form d-flex flex-column align-items-center" enctype="multipart/form-data"
+                action="ajouterEvent.php" method="post">
+                <div class="form-group w-75"><label for="nom">Vous êtes une - أنتم*</label>
+                    <select name="type" class="form-control form-control-lg">
+
+                        <option>Association / Organisation</option>
+                        <option> Individue</option>
+                    </select>
+                </div>
+                <div class="form-group w-75"><label for="nom">Nom de l'organisation - إسم الجمعية*</label>
+                    <input type="nom" name="nom" class="form-control" placeholder="nom" />
+                </div>
+                <div class="form-group w-75"><label for="web">Site web - موقع الواب</label>
+                    <input type="url" name="web" class="form-control" placeholder="https://" />
+                </div>
+                <div class="form-group w-75">
+
+                    <label for="logo">Logo - شعار الجمعية</label>
+                    <input type="file" id="logo" name="logo" class="form-control">
+
+                </div>
+
+                <div class="form-group w-75"><label for="typeacteur">Présentation de votre organisation - تقديم
+                        الجمعية*</label>
+                    <textarea name="presentation" class="form-control" type="text" placeholder="Message"
+                        rows="7"></textarea>
+                </div>
+
+
+
+
+                <h1>Informations sur l'activité proposée - معلومات حول النشاط المقترح
+                    <hr>
+                </h1>
+                <br>
+
+
+
+
+                <div class="form-group w-75"><label for="nom">Nom de l'activité - إسم النشاط*</label>
+                    <input name="title" type="nom" class="form-control" placeholder="" />
+                </div>
+                <div class="form-group w-75"><label for="description">Brève description de l'activité - وصف موجز
+                        للنشاط*</label>
+                    <textarea name="description" type="description" class="form-control" placeholder=""
+                        rows="7"></textarea>
+                </div>
+
+
+
+                <div class="form-group w-75"><label for="web">Durée de l'activité - مدة النشاط*</label>
+                    <select name="duree" class="form-control form-control-lg">
+
+                        <option>1 Jour</option>
+                        <option>2 Jours</option>
+                        <option>3 Jours</option>
+                    </select>
+                </div>
+
+                <div class="container no-gutters">
+                    <div class="row ">
+
+                        <div class="col-md-2" align="center">
+
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="form-group w-75"><label for="example-date-input"> De Date - التاريخ من-
+                                    *</label>
+                                <input name="start" class="form-control" type="datetime-local">
+                            </div>
+
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="form-group w-75"><label for="example-date-input">à - إلى*</label>
+                                <input name="end" class="form-control" type="datetime-local">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <header>
+                    <h1>Informations sur le lieu de l'activité - معلومات عن مكان النشاط</h1>
+                    <hr>
+                </header>
+
+
+                <div class="form-group w-75"><label>Endroit*</label>
+                    <select name="place" class="form-control form-control-lg">
+
+                        <option>La Municipalité- مقر البلدية</option>
+                        <option> Maison de jeunes-دار الشباب</option>
+                        <option>Maison de culture- دار الثقافة</option>
+                        <option>Espace privé- فضاء خاص</option>
+                        <option>Place public-ساحة عمومية</option>
+                        <option>Autres-اقتراح اخر</option>
+                    </select>
+                </div>
+
+                <div class="form-group w-75"><label for="nom">Nom du lieu de l'activité - اسم مكان النشاط*</label>
+                    <input type="nom" name="placeName" class="form-control" placeholder="" />
+                </div>
+
+
+                <h1> Prière de positionner le pointeur dans le lieu exacte de votre événement - الرجاء وضع المؤشر
+                    على
+                    المكان المحدد لنشاطكم</h1>
+                <hr>
+
+                <div>
+
+
+                    <style>
+                        /* Set the size of the div element that contains the map */
+                        #map {
+                            height: 400px;
+                            /* The height is 400 pixels */
+                            width: 1024px;
+                            /* The width is the width of the web page */
+                        }
+                    </style>
+                    <div id="map"></div>
+                  <script src="../js/map2.js"></script>
+                 
+ 
+                   
+
+                    <!--Load the API from the specified URL
+                     * The async attribute allows the browser to render the page while the API loads
+                     * The key parameter will contain your own API key (which is not needed for this tutorial)
+                     * The callback parameter executes the initMap() function
+                     -->
+                 
+                    <br><br>
+                </div>
+
+
+                <div class="form-group w-75"><label>Adresse exacte - العنوان الدقيق للنشاط</label>
+
+                    <input id="pac-input" placeholder="Enter your address"  type="text"
+                        name="exactplace" class="form-control" />
+                </div>
+                <div class="form-group w-75"><label>Lien de l'événement - رابط النشاط</label>
+                    <input type="url" name="eventLink" class="form-control" placeholder="https://" />
+                </div>
+
+                <div class="form-group w-75"><label for="typeacteur">Programme de l'activité - برنامج النشاط</label>
+                    <input class="form-control" name="myfile" type="file"></input>
+                </div>
+
+
+                <div style="visibility: hidden;">
+                    <div class="form-group w-75">
+                        <label>Coordinates - الإحداثيات</label>
+                    </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="form-group w-75">
+
+                                <input   name="latitude" type="text" class="form-control" id="lat"/>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-group w-75">
+
+                                <input name="longetude" type="text" class="form-control" id="long"  />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <button type="submit" id="submit" name="submit" class="btn btn-submit btn-info w-75">Submit</button>
+        </div>
+        </form>
+    </section>
+    <script> 
+document.getElementById("pac-input").addEventListener("change",markpos());
+
+    function markpos(){
+        console.log("hello");
+    }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="footer-area footer--light">
+        <div class="footer-big">
+            <!-- start .container -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-12">
+                        <div class="footer-widget">
+                            <div class="widget-about">
+                                <!-- <img src="http://placehold.it/250x80" alt="" class="img-fluid"> -->
+                                <h4 class="footer-widget-title">C’est quoi la JID ? </h4>
+                                <p>En 2007, l’Assemblée générale des Nations Unies a décidé de célébrer le <b>15
+                                        Septembre</b> de chaque année la Journée internationale de la démocratie
+                                    (JID)dans le but de promouvoir et de défendre les principes de la démocratie. Chacun
+                                    est invité à commémorer cette journée pour accroître la sensibilisation du public
+                                    sur les enjeux démocratiques. <b><a href="../presentation-2/index.html">En savoir
+                                            plus</a></b></p>
+                                <ul class="contact-details">
+
+                                    <li>
+                                        <span class="icon-envelope-open"></span>
+                                        <b><a href="mailto:info@jid.tn">info@jid.tn</a></b>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-4 -->
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu footer-menu--1">
+                                <h4 class="footer-widget-title">Liens Utiles</h4>
+                                <ul>
+                                    <li>
+                                        <a href="#">United Nations</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">National Endowment for Democracy (NED)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">L'Union Interparlementaire(IPU)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Elections Canada La Semaine </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Canadienne de la Démocratie</a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#">Le Réseau InTerre Actif (Québec)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Assemblée Parlementaire de la Francophonie</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Confédération Suisse Canton de Genève</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">International Day for Democracy conference to focus on democratic
+                                            politics</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-md-3 -->
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu">
+                                <h4 class="footer-widget-title">Suivez-nous !</h4>
+
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- end /.col-lg-3 -->
+
+                    <div class="col-md-3 col-sm-4">
+                        <div class="footer-widget">
+                            <div class="footer-menu no-padding">
+                                <h4 class="footer-widget-title">Notre partenaire médiatique</h4>
+                                <ul>
+                                    <li>
+                                        <img src="../src/ifm.jpg" alt="" class="img-fluid">
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- end /.footer-menu -->
+                        </div>
+                        <!-- Ends: .footer-widget -->
+                    </div>
+                    <!-- Ends: .col-lg-3 -->
+
+                </div>
+                <!-- end /.row -->
+            </div>
+            <!-- end /.container -->
+        </div>
+        <!-- end /.footer-big -->
+
+        <div class="mini-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text">
+                            <p>© 2020
+                                <a href="#">JID</a>. All rights reserved. Created by
+                                <a href="#">GAW</a>
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAObzCbk0hwnk8LbUcTeFguDk5ZDr36VS4&callback=initMap&libraries=place=AIzaSyAObzCbk0hwnk8LbUcTeFguDk5ZDr36VS4&callback=initMap&libraries=places">
+        </script>
+    <script src="../js/preloader.js"></script>
+    <script src="../js/map2.js"></script>
+</body>
+
+</html>
